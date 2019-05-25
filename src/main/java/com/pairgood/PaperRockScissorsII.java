@@ -2,13 +2,9 @@ package com.pairgood;
 
 public class PaperRockScissorsII {
 
-    public String play(String gesture){
+    public String play(String gestureOne, String gestureTwo){
 
-        if (gesture == "rock" && gesture == "paper");
-
+        if (gestureOne.equals("rock") && gestureTwo.equals("paper"));
         return "rock";
-        else
-
-        return gesture.toString();
     }
 }
