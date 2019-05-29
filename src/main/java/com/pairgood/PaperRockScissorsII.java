@@ -10,6 +10,9 @@ public class PaperRockScissorsII {
         if (gestureOne.equals("paper") && gestureTwo.equals("rock"))
             return "paper";
 
+        if (gestureOne.equals("rock") && gestureTwo.equals("scissors"))
+            return "rock";
+
         return "error";
     }
 }
