@@ -1,14 +1,21 @@
 package com.pairgood;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class PaperRockScissorsIITest {
 
+    private PaperRockScissorsII game;
+
+    @Before
+
+    public void setup(){
+        game = new PaperRockScissorsII();
+    }
+
     @Test
     public void whenRockAndPaperThrownPaperWins(){
-
-        PaperRockScissorsII game = new PaperRockScissorsII();
 
         String actual = game.play("rock", "paper");
 
@@ -18,8 +25,6 @@ public class PaperRockScissorsIITest {
     @Test
     public void whenPaperAndRockThrownPaperWins(){
 
-        PaperRockScissorsII game = new PaperRockScissorsII();
-
         String actual = game.play("paper", "rock");
 
         Assert.assertEquals("paper", actual);
@@ -27,8 +32,6 @@ public class PaperRockScissorsIITest {
 
     @Test
     public void whenRockAndScissorsThrownRockWins(){
-
-        PaperRockScissorsII game = new PaperRockScissorsII();
 
         String actual = game.play("rock", "scissors");
 
@@ -38,8 +41,6 @@ public class PaperRockScissorsIITest {
     @Test
     public void whenScissorsAndRockThrownRockWins(){
 
-        PaperRockScissorsII game = new PaperRockScissorsII();
-
         String actual = game.play("scissors", "rock");
 
         Assert.assertEquals("rock", actual);
@@ -47,8 +48,6 @@ public class PaperRockScissorsIITest {
 
     @Test
     public void whenScissorsAndPaperThrownScissorsWins(){
-
-        PaperRockScissorsII game = new PaperRockScissorsII();
 
         String actual = game.play("scissors", "paper");
 
@@ -58,8 +57,6 @@ public class PaperRockScissorsIITest {
     @Test
     public void whenPaperAndScissorsThrownScissorsWins(){
 
-        PaperRockScissorsII game = new PaperRockScissorsII();
-
         String actual = game.play("paper", "scissors");
 
         Assert.assertEquals("scissors", actual);
@@ -67,8 +64,6 @@ public class PaperRockScissorsIITest {
 
     @Test
     public void whenPaperAndPaperThrownTieDrawn(){
-
-        PaperRockScissorsII game = new PaperRockScissorsII();
 
         String actual = game.play("paper", "paper");
 
@@ -78,8 +73,6 @@ public class PaperRockScissorsIITest {
     @Test
     public void whenRockAndRockThrownTieDrawn(){
 
-        PaperRockScissorsII game = new PaperRockScissorsII();
-
         String actual = game.play("rock", "rock");
 
         Assert.assertEquals("tie", actual);
@@ -87,8 +80,6 @@ public class PaperRockScissorsIITest {
 
     @Test
     public void whenScissorsAndScissorsThrownTieDrawn(){
-
-        PaperRockScissorsII game = new PaperRockScissorsII();
 
         String actual = game.play("scissors", "scissors");
 
