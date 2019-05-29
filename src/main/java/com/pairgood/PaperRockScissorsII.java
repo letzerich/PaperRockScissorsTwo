@@ -1,13 +1,17 @@
 package com.pairgood;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PaperRockScissorsII {
 
     public String play(String gestureOne, String gestureTwo){
 
-        if (gestureOne.equals("rock") && gestureTwo.equals("paper"))
-            return "paper";
+        List<String> gestures = new ArrayList<>();
+        gestures.add(gestureOne);
+        gestures.add(gestureTwo);
 
-        if (gestureOne.equals("paper") && gestureTwo.equals("rock"))
+        if (gestures.contains("rock") && gestures.contains("paper"))
             return "paper";
 
         if (gestureOne.equals("rock") && gestureTwo.equals("scissors"))
