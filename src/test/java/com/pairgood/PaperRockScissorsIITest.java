@@ -34,4 +34,14 @@ public class PaperRockScissorsIITest {
 
         Assert.assertEquals("rock", actual);
     }
+
+    @Test
+    public void whenScissorsAndRockThrownRockWins(){
+
+        PaperRockScissorsII game = new PaperRockScissorsII();
+
+        String actual = game.play("scissors", "rock");
+
+        Assert.assertEquals("rock", actual);
+    }
 }
