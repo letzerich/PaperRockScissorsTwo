@@ -14,16 +14,10 @@ public class PaperRockScissorsII {
         if (gestures.contains("rock") && gestures.contains("paper"))
             return "paper";
 
-        if (gestureOne.equals("rock") && gestureTwo.equals("scissors"))
+        if (gestures.contains("rock") && gestures.contains("scissors"))
             return "rock";
 
-        if (gestureOne.equals("scissors") && gestureTwo.equals("rock"))
-            return "rock";
-
-        if (gestureOne.equals("scissors") && gestureTwo.equals("paper"))
-            return "scissors";
-
-        if (gestureOne.equals("paper") && gestureTwo.equals("scissors"))
+        if (gestures.contains("paper") && gestures.contains("scissors"))
             return "scissors";
 
         if (gestureOne.equals(gestureTwo))
