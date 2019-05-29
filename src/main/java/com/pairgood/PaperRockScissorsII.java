@@ -22,13 +22,7 @@ public class PaperRockScissorsII {
         if (gestureOne.equals("paper") && gestureTwo.equals("scissors"))
             return "scissors";
 
-        if (gestureOne.equals("paper") && gestureTwo.equals("paper"))
-            return "tie";
-
-        if (gestureOne.equals("rock") && gestureTwo.equals("rock"))
-            return "tie";
-
-        if (gestureOne.equals("scissors") && gestureTwo.equals("scissors"))
+        if (gestureOne.equals(gestureTwo))
             return "tie";
 
         return "error";
